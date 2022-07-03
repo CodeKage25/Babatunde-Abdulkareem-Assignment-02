@@ -24,7 +24,7 @@ function sumOfNumbers(arrayOfNumbers) {
     return sum;
     //return arrayOfNumbers.length;
 }
-console.log(sumOfNumbers([5, 7, 9]));
+// console.log(sumOfNumbers([5, 7, 9]));
 assignment.sumOfNumbers = sumOfNumbers;
 
 /**
@@ -63,7 +63,7 @@ for (let i = 0; i < arrayOfNumbers.length; i++) {
 return evenCount;
 // return arrayOfNumbers.length;
 }
-console.log(countEvenNumbers([0,1,2, 5, 6, 8, 9, 10, 12, 13]));
+// console.log(countEvenNumbers([0,1,2, 5, 6, 8, 9, 10, 12, 13]));
 assignment.countEvenNumbers = countEvenNumbers;
 
 /**
