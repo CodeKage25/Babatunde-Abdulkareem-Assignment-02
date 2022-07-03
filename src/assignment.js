@@ -14,9 +14,18 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+    // initialize starting from 0
+    let sum = 0;
+    //loop through the array
+    for (let i = 0; i < arrayOfNumbers.length; i++) {
+        //Adding the arrays
+        sum += arrayOfNumbers[i];
+    }
+    return sum;
+    //return arrayOfNumbers.length;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+console.log(sumOfNumbers([5, 7, 9]));
+assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -27,10 +36,35 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
+//  function countEvenNumbers(arrayOfNumbers) {
+//     //loop through the list of array
+//     for (let i = 0; i < arrayOfNumbers.length; i++) {
+//         const evenNumbers = arrayOfNumbers[i];
+//         if (evenNumbers % 2 === 0) {
+//             console.log(evenNumbers.length);  
+//         }
+        
+//     }
+//     // return arrayOfNumbers.length;
+// }
+// countEvenNumbers([1,2, 5, 6, 8, 9, 10, 12, 13]);
+
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+    let evenCount = 0;
+//loop through the list of array
+for (let i = 0; i < arrayOfNumbers.length; i++) {
+    // const evenNumbers = arrayOfNumbers[i];
+    if (arrayOfNumbers[i] % 2 === 0) {
+        // console.log(evenNumbers);
+        evenCount++;
+    }
+    
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+return evenCount;
+// return arrayOfNumbers.length;
+}
+console.log(countEvenNumbers([0,1,2, 5, 6, 8, 9, 10, 12, 13]));
+assignment.countEvenNumbers = countEvenNumbers;
 
 /**
  * Challenge - 3
@@ -46,9 +80,13 @@ function countEvenNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
  * @returns Array the converted temperatures in Fahrenheit
  */
-function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
-}
+// function celsiusToFahrenheit(arrayOfNumbers) {
+//     let temp = 0;
+//     for (let i = 0; i < arrayOfNumbers.length; i++) {
+//         temp = 
+//     }
+//     return arrayOfNumbers;
+// }
 // assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 
